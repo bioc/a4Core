@@ -1,2 +1,6 @@
+1.1.2
+  o add topTable method for 'lognet' objects and accompanying print method print.topTableLognet
+1.1.1
+  o on BioConductor
 0.0-1
   o first introduction as separate package
