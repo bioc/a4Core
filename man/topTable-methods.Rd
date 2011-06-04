@@ -3,6 +3,7 @@
 \alias{topTable-methods}
 \alias{topTable,glmnet-method}
 \alias{topTable,lognet-method}
+\alias{topTable,elnet-method}
 \title{Methods for topTable}
 \description{
   Methods for topTable. topTable extracts the top n most important features
@@ -19,6 +20,8 @@ glmnet and lognet
 \item{fit = "lognet", n = "numeric"}{lognet objects are produced by \code{lassoClass} (a4Classif) or 
   \code{lassoReg} (a4Base)}
 
+\item{fit = "elnet", n = "numeric"}{lognet objects are produced by \code{lassoClass} (a4Classif) or 
+  \code{lassoReg} (a4Base)}
 }
 }
 \arguments{
@@ -29,4 +32,3 @@ glmnet and lognet
 }
 \keyword{methods}
 \keyword{manip}
-
