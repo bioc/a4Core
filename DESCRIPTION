@@ -1,12 +1,12 @@
 Package: a4Core
 Type: Package
 Title: Automated Affymetrix Array Analysis Core Package
-Version: 1.11.0
+Version: 1.11.1
 Date: 2011-06-04
 Author: Willem Talloen, Tobias Verbeke
-Maintainer: Tobias Verbeke <tobias.verbeke@openanalytics.eu>, Willem Ligtenberg <willem.ligtenberg@openanalytics.eu>
-Description: Automated Affymetrix Array Analysis Core Package 
+Maintainer: Tobias Verbeke <tobias.verbeke@openanalytics.eu>, Willem
+        Ligtenberg <willem.ligtenberg@openanalytics.eu>
+Description: Automated Affymetrix Array Analysis Core Package
 Depends: methods, Biobase, glmnet
-biocViews: Bioinformatics, Microarray
 License: GPL-3
-
+biocViews: Microarray
