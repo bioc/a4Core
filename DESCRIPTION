@@ -1,12 +1,17 @@
 Package: a4Core
 Type: Package
 Title: Automated Affymetrix Array Analysis Core Package
-Version: 1.37.0
-Date: 2020-04-03
-Author: Willem Talloen, Tobias Verbeke
-Maintainer: Tobias Verbeke <tobias.verbeke@openanalytics.eu>, 
-  Laure Cougnaud <laure.cougnaud@openanalytics.eu>
-Description: Automated Affymetrix Array Analysis Core Package
-Depends: methods, Biobase, glmnet
+Version: 1.37.1
+Date: 2020-10-14
+Authors@R: c(
+  person(given = "Willem", family = "Talloen", role = "aut"),
+  person(given = "Tobias", family = "Verbeke", role = "aut", email = "tobias.verbeke@openanalytics.eu"),
+  person(given = "Laure", family = "Cougnaud", role = "cre", email = "laure.cougnaud@openanalytics.eu")
+ )
+Description: Utility functions for the Automated Affymetrix Array Analysis set of packages.
+Imports: Biobase, glmnet, methods, stats
+Suggests: roxygen2, knitr, rmarkdown
 License: GPL-3
-biocViews: Microarray
+biocViews: Microarray, Classification
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr

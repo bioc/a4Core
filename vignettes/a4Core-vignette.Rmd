@@ -1,0 +1,71 @@
+---
+title: "Vignette of the a4Core package"
+date: "`r Sys.Date()`"
+output: 
+  rmarkdown::html_document:
+    toc: true
+    toc_float:
+      collapsed: true
+    number_sections: true
+vignette: >
+  %\VignetteIndexEntry{a4Core package}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+# Introduction
+
+This document explains the functionalities available in the
+**a4Core** package.
+
+
+This package contains utility functions for the Automated Affymetrix Array Analysis 
+suite of packages.
+
+```{r options, echo = FALSE}
+	
+	library(knitr)
+	opts_chunk$set(echo = TRUE, results = 'asis', warning = FALSE, 
+		error = FALSE, message = FALSE, cache = FALSE,
+		fig.width = 8, fig.height = 7,
+		#out.width = '0.7\\textwidth', 
+		fig.align = 'center')#, out.height = 0.5\\textwidth', fig.path = 'graphs/') 
+	options(width = 170)#, stringsAsFactors = FALSE
+	options(warn = 1)#instead of warn = 0 by default -> to have place where warnings occur in the call to Sweave function
+	
+```
+
+```{r loadLibraries, results = 'hide', echo = FALSE}
+
+	library(a4Core)
+
+```
+
+# Simulate data
+
+An expressionSet example data for testing and demonstration of the set of packages is simulated with
+the `simulateData` function:
+
+```{r simulateData}
+eSet <- simulateData(
+	nCols = 40, nRows = 1000, 
+	nEffectRows = 5, nNoEffectCols = 5,
+	betweenClassDifference = 1, withinClassSd = 0.5
+)
+print(eSet)
+```
+
+# Top tables utility functions for classification
+
+The package contains utility functions to create the top tables
+of the most important features for multiple classification models
+as produced by the `lassoClass` function of the `a4Classif` package, 
+as 'glmnet', 'lognet' and 'elnet'.
+
+# Appendix
+
+## Session information
+
+````{r sessionInformation, echo = FALSE}
+print(sessionInfo())
+```

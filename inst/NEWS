@@ -1,3 +1,7 @@
+1.37.1
+  o use Imports rather than Depends + use roxygen2 for documentation
+  o use Authors@R
+  o add vignette
 1.1.3
   o remove duplicated code for glmnet type of objects; add topTable method for 'elnet' objects
     and accompanying print method print.topTableElnet
