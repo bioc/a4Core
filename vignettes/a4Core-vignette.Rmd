@@ -22,19 +22,6 @@ This document explains the functionalities available in the
 This package contains utility functions for the Automated Affymetrix Array Analysis 
 suite of packages.
 
-```{r options, echo = FALSE}
-	
-	library(knitr)
-	opts_chunk$set(echo = TRUE, results = 'asis', warning = FALSE, 
-		error = FALSE, message = FALSE, cache = FALSE,
-		fig.width = 8, fig.height = 7,
-		#out.width = '0.7\\textwidth', 
-		fig.align = 'center')#, out.height = 0.5\\textwidth', fig.path = 'graphs/') 
-	options(width = 170)#, stringsAsFactors = FALSE
-	options(warn = 1)#instead of warn = 0 by default -> to have place where warnings occur in the call to Sweave function
-	
-```
-
 ```{r loadLibraries, results = 'hide', echo = FALSE}
 
 	library(a4Core)
