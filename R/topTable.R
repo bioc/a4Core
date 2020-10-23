@@ -81,7 +81,7 @@ setMethod("topTable",
     "glmnet",
     function(fit, n){
       res <- glmnetUtil(fit = fit, n = n)
-      class(res) <- "topTableGlmnet"
+      class(res) <- c("topTableGlmnet", class(res))
       return(res)
     }
 )
@@ -92,7 +92,7 @@ setMethod("topTable",
     "lognet",
     function(fit, n){
       res <- glmnetUtil(fit = fit, n = n)
-      class(res) <- "topTableLognet"
+      class(res) <- c("topTableLognet", class(res))
       return(res)
     }
 )
@@ -103,7 +103,7 @@ setMethod("topTable",
     "elnet",
     function(fit, n){
       res <- glmnetUtil(fit = fit, n = n)
-      class(res) <- "topTableElnet"
+      class(res) <- c("topTableElnet", class(res))
       return(res)
     }
 )
